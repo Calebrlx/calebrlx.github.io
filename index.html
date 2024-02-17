@@ -13,6 +13,7 @@
         }
         pre {
             background-color: #1e1e1e;
+            color: #d4d4d4;
             padding: 20px;
             border-radius: 5px;
             overflow-x: auto;
@@ -26,13 +27,18 @@
         .json-string {
             color: #b5cea8;
         }
+        .json-boolean, .json-null {
+            color: #569cd6;
+        }
+        .json-number {
+            color: #b5cea8;
+        }
     </style>
 </head>
 <body>
     <pre id="portfolioJson"></pre>
 
     <script>
-        // Example portfolio data in JSON format
         var portfolioData = {
             "Intro": {
                 "name": "Caleb Forestal",
@@ -56,17 +62,15 @@
             },
             "Blogs": [
                 {
-                "title": "Loading..........",
-                "description": "Loading......",
-                "body": "Loading........",
-                "id": "Loading.....",
-                "createdat": "Loading........."
+                    "title": "Loading..........",
+                    "description": "Loading......",
+                    "body": "Loading........",
+                    "id": "Loading.....",
+                    "createdat": "Loading........."
                 }
-
             ]
         };
 
-        // Function to add syntax highlighting to JSON
         function syntaxHighlight(json) {
             json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
             return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
@@ -77,14 +81,18 @@
                     } else {
                         cls = 'json-string';
                     }
+                } else if (/true|false/.test(match)) {
+                    cls = 'json-boolean';
+                } else if (/null/.test(match)) {
+                    cls = 'json-null';
+                } else {
+                    cls = 'json-number';
                 }
                 return '<span class="' + cls + '">' + match + '</span>';
             });
         }
 
-        // Displaying the formatted and highlighted JSON data
         document.getElementById('portfolioJson').innerHTML = syntaxHighlight(JSON.stringify(portfolioData, null, 4));
     </script>
 </body>
 </html>
-
