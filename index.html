@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio Page</title>
+    <title>Portfolio JSON Display</title>
     <style>
         body { font-family: Arial, sans-serif; }
-        .portfolio-item { margin-bottom: 20px; }
-        .portfolio-item h2 { margin: 0 0 5px 0; }
-        .portfolio-item p { margin: 0; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
     </style>
 </head>
 <body>
-    <h1>My Portfolio</h1>
-    <div id="portfolio"></div>
+    <h1>Portfolio JSON Data</h1>
+    <pre><code id="portfolioJson"></code></pre>
 
     <script>
         // Example portfolio data in JSON format
@@ -31,20 +29,8 @@
             ]
         };
 
-        function displayPortfolio(data) {
-            var portfolioContainer = document.getElementById('portfolio');
-            data.portfolio.forEach(function(project) {
-                var item = document.createElement('div');
-                item.className = 'portfolio-item';
-                item.innerHTML = '<h2>' + project.title + '</h2>' +
-                                 '<p>' + project.description + '</p>' +
-                                 '<p>Technologies: ' + project.technologies.join(', ') + '</p>';
-                portfolioContainer.appendChild(item);
-            });
-        }
-
-        // Call the function to display the portfolio
-        displayPortfolio(portfolioData);
+        // Displaying the JSON data
+        document.getElementById('portfolioJson').textContent = JSON.stringify(portfolioData, null, 2);
     </script>
 </body>
 </html>
