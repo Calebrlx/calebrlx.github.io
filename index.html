@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio JSON Display</title>
+    <title>Portfolio JSON Display - Dark Mode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; }
-        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        body {
+            font-family: 'Fira Code', monospace;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            margin: 0;
+            padding: 20px;
+        }
+        pre {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .json-key {
+            color: #9cdcfe;
+        }
+        .json-value {
+            color: #ce9178;
+        }
+        .json-string {
+            color: #b5cea8;
+        }
     </style>
 </head>
 <body>
     <h1>Portfolio JSON Data</h1>
-    <pre><code id="portfolioJson"></code></pre>
+    <pre id="portfolioJson"></pre>
 
     <script>
         // Example portfolio data in JSON format
@@ -29,8 +50,24 @@
             ]
         };
 
-        // Displaying the JSON data
-        document.getElementById('portfolioJson').textContent = JSON.stringify(portfolioData, null, 2);
+        // Function to add syntax highlighting to JSON
+        function syntaxHighlight(json) {
+            json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
+                var cls = 'json-value';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'json-key';
+                    } else {
+                        cls = 'json-string';
+                    }
+                }
+                return '<span class="' + cls + '">' + match + '</span>';
+            });
+        }
+
+        // Displaying the formatted and highlighted JSON data
+        document.getElementById('portfolioJson').innerHTML = syntaxHighlight(JSON.stringify(portfolioData, null, 4));
     </script>
 </body>
 </html>
