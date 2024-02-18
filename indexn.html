@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full-Width Lines Layout</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .log-entry {
+    border-top: 1px solid #000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .timestamp {
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .log-type {
+    flex-basis: 10%;
+    text-align: center;
+  }
+
+  .log-message {
+    flex-basis: 60%;
+    text-align: left;
+  }
+
+  .log-priority {
+    flex-basis: 10%;
+    text-align: center;
+  }
+
+  /* Adjusting margins between log entries */
+  .log-entry:not(:first-child) {
+    margin-top: 15px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p>Hello World</p>
+</div>
+
+<!-- Example log entries -->
+<div class="log-entry">
+    <div class="timestamp">2024-02-17 10:00</div>
+    <div class="log-type">INFO</div>
+    <div class="log-message">This is an informational message about system status.</div>
+    <div class="log-priority">Low</div>
+</div>
+  
+<div class="log-entry">
+    <div class="timestamp">2024-02-17 10:15</div>
+    <div class="log-type">WARNING</div>
+    <div class="log-message">This is a warning message about a potential issue.</div>
+    <div class="log-priority">Medium</div>
+</div>
+  
+<div class="log-entry">
+    <div class="timestamp">2024-02-17 10:30</div>
+    <div class="log-type">ERROR</div>
+    <div class="log-message">This is an error message about a failed operation.</div>
+    <div class="log-priority">High</div>
+</div>
+
+</body>
+</html>
