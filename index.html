@@ -18,20 +18,22 @@
   }
 
   .line {
-    border-top: 2px solid #000; /* Make the line slightly thicker */
-    margin-top: 50px; /* Increase space between lines */
+    border-top: 1px solid #000; /* Standard line thickness */
+    margin-top: 30px; /* Adjusted space between lines */
     position: relative;
-    min-height: 50px; /* Ensures space is preserved even without text */
+    height: 30px; /* Adjusted minimum height for each line section */
   }
 
   .line::after {
     content: 'X';
     position: absolute;
-    right: 50%; /* Adjust this value to move the 'X' horizontally */
-    top: -10px; /* Adjust this value to center 'X' vertically relative to the line */
-    transform: translateX(50%); /* Centers the 'X' */
-    font-size: 24px; /* Increase the size of 'X' if needed */
+    right: 50%; /* Center 'X' horizontally */
+    top: 50%; /* Center 'X' vertically */
+    transform: translate(50%, -50%); /* Adjust both horizontally and vertically */
+    font-size: 20px; /* Adjust size of 'X' if needed */
+    line-height: 20px; /* Align the 'X' with the line height */
   }
+
 </style>
 </head>
 <body>
