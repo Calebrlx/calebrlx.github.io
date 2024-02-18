@@ -3,86 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Very Good Films</title>
+<title>Full-Width Lines Layout</title>
 <style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #333;
+  body, html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
   }
-  header {
-    background-color: #333;
-    color: #fff;
+
+  .header {
+    background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
   }
-  .container {
-    width: 80%;
-    margin: 0 auto;
+
+  .line {
+    border-top: 1px solid #000;
+    position: relative;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+
+  .line::after {
+    content: 'X';
+    position: absolute;
+    right: 50%; /* Adjust this value to move the 'X' horizontally */
+    top: 0;
+    transform: translateX(50%); /* Centers the 'X' */
   }
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  th {
-    background-color: #f3f3f3;
-    padding: 10px;
-    cursor: pointer;
-  }
-  td {
-    padding: 10px;
-    text-align: left;
-  }
-  th, td {
-    text-align: left;
-  }
-  .add-button {
-    text-align: center;
-    color: red;
-    cursor: pointer;
-  }
+
+  /* Add as many .line elements as needed */
 </style>
 </head>
 <body>
 
-<header>
-  <h1>Very Good Films</h1>
-  <p>An online film catalogue by film lovers. Sharing since 2020.</p>
-  <!-- Additional header content here -->
-</header>
-
-<div class="container">
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Year</th>
-        <th>Director</th>
-        <th>Country</th>
-        <th>Genre</th>
-        <th></th> <!-- For the add button -->
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Repeat this tr for each film, data should be dynamically loaded -->
-      <tr>
-        <td>10 Things I Hate About You</td>
-        <td>1999</td>
-        <td>Gil Junger</td>
-        <td>United States</td>
-        <td>Comedy</td>
-        <td class="add-button">+</td>
-      </tr>
-      <!-- More rows... -->
-    </tbody>
-  </table>
+<div class="header">
+  <p>Random filler text goes here at the top of the page.</p>
 </div>
+
+<!-- Full-width lines with 'X' -->
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<!-- ... repeat as many times as needed -->
 
 </body>
 </html>
