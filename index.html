@@ -18,19 +18,20 @@
   }
 
   .line {
-    border-top: 1px solid #000;
+    border-top: 2px solid #000; /* Make the line slightly thicker */
+    margin-top: 50px; /* Increase space between lines */
     position: relative;
+    min-height: 50px; /* Ensures space is preserved even without text */
   }
 
   .line::after {
     content: 'X';
     position: absolute;
     right: 50%; /* Adjust this value to move the 'X' horizontally */
-    top: 0;
+    top: -10px; /* Adjust this value to center 'X' vertically relative to the line */
     transform: translateX(50%); /* Centers the 'X' */
+    font-size: 24px; /* Increase the size of 'X' if needed */
   }
-
-  /* Add as many .line elements as needed */
 </style>
 </head>
 <body>
@@ -39,12 +40,12 @@
   <p>Hello World</p>
 </div>
 
-<!-- Full-width lines with 'X' -->
+
 <div class="line"><p>h</p></div>
 <div class="line"><p>e</p></div>
 <div class="line"><p>l</p></div>
 <div class="line"></div>
-<div class="line"></div><br>
+<div class="line"></div>
 <div class="line"><p>l</p></div>
 <div class="line"><p>o</p></div>
 <div class="line"></div>
@@ -52,7 +53,6 @@
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"></div>
-<!-- ... repeat as many times as needed -->
 
 </body>
 </html>
