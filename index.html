@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scroll */
+    font-family: Arial, sans-serif;
   }
 
   .header {
@@ -17,21 +18,37 @@
     text-align: center;
   }
 
-  .line {
-    border-top: 1px solid #000; /* Standard line thickness */
-    margin-top: 30px; /* Adjusted space between lines */
-    position: relative;
-    height: 30px; /* Adjusted minimum height for each line section */
+  .log-entry {
+    border-top: 1px solid #000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .line::after {
-    content: 'X';
-    position: absolute;
-    right: 50%; /* Center 'X' horizontally */
-    top: 50%; /* Center 'X' vertically */
-    transform: translate(50%, -50%); /* Adjust both horizontally and vertically */
-    font-size: 20px; /* Adjust size of 'X' if needed */
-    line-height: 20px; /* Align the 'X' with the line height */
+  .timestamp {
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .log-type {
+    flex-basis: 10%;
+    text-align: center;
+  }
+
+  .log-message {
+    flex-basis: 60%;
+    text-align: left;
+  }
+
+  .log-priority {
+    flex-basis: 10%;
+    text-align: center;
+  }
+
+  /* Adjusting margins between log entries */
+  .log-entry:not(:first-child) {
+    margin-top: 15px;
   }
 
 </style>
@@ -42,19 +59,27 @@
   <p>Hello World</p>
 </div>
 
-
-<div class="line"><p>h</p></div>
-<div class="line"><p>e</p></div>
-<div class="line"><p>l</p></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><p>l</p></div>
-<div class="line"><p>o</p></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
+<!-- Example log entries -->
+<div class="log-entry">
+    <div class="timestamp">2024-02-17 10:00</div>
+    <div class="log-type">INFO</div>
+    <div class="log-message">This is an informational message about system status.</div>
+    <div class="log-priority">Low</div>
+</div>
+  
+<div class="log-entry">
+    <div class="timestamp">2024-02-17 10:15</div>
+    <div class="log-type">WARNING</div>
+    <div class="log-message">This is a warning message about a potential issue.</div>
+    <div class="log-priority">Medium</div>
+</div>
+  
+<div class="log-entry">
+    <div class="timestamp">2024-02-17 10:30</div>
+    <div class="log-type">ERROR</div>
+    <div class="log-message">This is an error message about a failed operation.</div>
+    <div class="log-priority">High</div>
+</div>
 
 </body>
 </html>
