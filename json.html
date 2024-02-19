@@ -22,9 +22,32 @@
             align-items: center;
             margin-top: 20px;
         }
+        pre {
+            /* background-color: #3f3a3a; */
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .json-key {
+            color: #9cdcfe;
+        }
+        .json-value {
+            color: #ce9178;
+        }
+        .json-string {
+            color: #b5cea8;
+        }
+        .json-boolean, .json-null {
+            color: #569cd6;
+        }
+        .json-number {
+            color: #b5cea8;
+        }
     </style>
 </head>
 <body>
+    <pre id="portfolioJson"></pre>
 
     <!-- Footer -->
     <footer>
@@ -41,5 +64,62 @@
             <a href="terms.html">Terms & Conditions</a>
         </p>
     </footer>
+    
+    <script>
+        var portfolioData = {
+            "Intro": {
+                "name": "Caleb Forestal",
+                "portfolio": [
+                    {
+                        "title": "Summit Lawn Care",
+                        "description": "Before there was software as a service, there was just service",
+                        "technologies": ["Sales", "Manual labor", "Grass"]
+                    },
+                    {
+                        "title": "Relix",
+                        "description": "A Research company",
+                        "technologies": ["AI", "R&D"]
+                    },
+                    {
+                        "title": "Powderly",
+                        "description": "A passion project",
+                        "technologies": ["Community", "Skiing"]
+                    },
+                ]
+            },
+            "Blogs": [
+                {
+                    "title": "Loading..........",
+                    "description": "Loading......",
+                    "body": "Loading........",
+                    "id": "Loading.....",
+                    "createdat": "Loading........."
+                }
+            ]
+        };
+
+        function syntaxHighlight(json) {
+            json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
+                var cls = 'json-value';
+                if (/^"/.test(match)) { 
+                    if (/:$/.test(match)) {
+                        cls = 'json-key';
+                    } else {
+                        cls = 'json-string';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'json-boolean';
+                } else if (/null/.test(match)) {
+                    cls = 'json-null';
+                } else {
+                    cls = 'json-number';
+                }
+                return '<span class="' + cls + '">' + match + '</span>';
+            });
+        }
+
+        document.getElementById('portfolioJson').innerHTML = syntaxHighlight(JSON.stringify(portfolioData, null, 4));
+    </script>
 </body>
 </html>
