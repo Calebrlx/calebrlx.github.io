@@ -19,6 +19,7 @@
         }
 
         main {
+            position: relative; /* Needed for pseudo-elements positioning */
             background-color: #fff; /* White paper-like background */
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow to lift the paper off the desk */
             padding: 40px; /* Spacious padding around the content */
@@ -26,6 +27,23 @@
             width: 100%;
             margin: 20px; /* Margin around the paper */
             overflow-y: auto; /* Allows content to scroll inside the paper */
+        }
+
+        main::before, main::after {
+            content: ''; /* Required for pseudo-elements */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px; /* Width of the line */
+            background-color: #ccc; /* Color of the line */
+        }
+
+        main::before {
+            left: -20px; /* Position the line to the left of the paper */
+        }
+
+        main::after {
+            right: -20px; /* Position the line to the right of the paper */
         }
 
         footer {
