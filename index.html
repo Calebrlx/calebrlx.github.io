@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog - Dark Mode</title>
+    <title>Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,14 +34,17 @@
         .json-number {
             color: #b5cea8;
         }
+        footer {
+            align-self: center;
+        }
     </style>
 </head>
 <body>
     <pre id="portfolioJson"></pre>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Very Good Films. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2024 Relix Co. | All rights reserved.</p>
         <div class="social-icons">
             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -92,7 +95,7 @@
             json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
             return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
                 var cls = 'json-value';
-                if (/^"/.test(match)) {
+                if (/^"/.test(match)) { 
                     if (/:$/.test(match)) {
                         cls = 'json-key';
                     } else {
