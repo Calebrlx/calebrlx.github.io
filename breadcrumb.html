@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Tree View</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 20px;
+            padding: 10px 0;
+            list-style: none;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumb li {
+            display: inline;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb li + li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0"; /* Adds a slash between breadcrumbs */
+        }
+
+        .breadcrumb a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+
+        .tree-view ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tree-view ul ul {
+            padding-left: 20px;
+        }
+
+        .tree-view a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="breadcrumb">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Directory</a></li>
+        <li>Sites</li>
+    </ul>
+</div>
+
+<div class="tree-view">
+    <ul>
+        <li><a href="https://example.com/site1">Site 1</a>
+            <ul>
+                <li><a href="https://example.com/site1/page1">Page 1</a></li>
+                <li><a href="https://example.com/site1/page2">Page 2</a></li>
+            </ul>
+        </li>
+        <li><a href="https://example.com/site2">Site 2</a>
+            <ul>
+                <li><a href="https://example.com/site2/page1">Page 1</a></li>
+                <li><a href="https://example.com/site2/page2">Page 2</a>
+                    <ul>
+                        <li><a href="https://example.com/site2/page2/subpage1">Subpage 1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://example.com/site3">Site 3</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
