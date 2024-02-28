@@ -73,7 +73,7 @@ after that, click the 3rd item down from the top, should look like 3 dots connec
 
 ## Other stuff
 <details closed>
-<summary>See more<summary>
+<summary>See more</summary>
 anything you put in the public folder will be accesable through "yoursite.com/.." so if you put an image "img.png" in the public folder (public/img.png) you would be able to find it on your website at "domain.com/img.png"
 
 routing: any .html file you create in this file will be a path, index is a special file that is used as the home dir of you page "domain.com/". if i were to create a file about.html and publish the site, i would be able to view it by going to "domain.com/about"
