@@ -24,8 +24,6 @@ Ready to embark on your website-building journey? Simply follow the breadcrumbs!
 
 Curious to learn more about GitHub Pages and what it can do for you? Check out the links provided in this document for additional resources and insights. The world of website creation awaits, and you're just a click away from joining the fun!
 
-So go ahead, take a peek inside, and let's make your online presence shine!
-
 
 ### Let's Build Your First Website!
 
@@ -56,6 +54,9 @@ So go ahead, take a peek inside, and let's make your online presence shine!
    - Find a repository with a website design you like.
    - Copy the HTML, CSS, and other necessary files into your repository to customize your website.
 
+
+---
+
 #### Method 2: GitHub.dev (GitHub's Online IDE)
 
 1. **Access GitHub.dev:**
@@ -78,8 +79,8 @@ So go ahead, take a peek inside, and let's make your online presence shine!
    - Open a new tab in your browser and go to `https://[your username].github.io`.
    - Your website should now display the text you added in the HTML file.
 
-With these simple steps, you've created your first website using GitHub Pages! Feel free to experiment with different designs and content to make it your own. Happy coding!
 
+---
 
 ### Other Useful Tips and Tricks
 
@@ -109,8 +110,6 @@ Frameworks can be your best friend when it comes to building and maintaining lar
 - **Understanding Licenses**: Learn more about software licenses and their implications through resources like [Choose a License](https://choosealicense.com/) and [Open Source Initiative](https://opensource.org/).
 - **Exploring Frameworks**: Explore different web development frameworks by checking out their official documentation, tutorials, and GitHub repositories. Experiment with building small projects to get hands-on experience.
 </details>
-
-With these additional insights and resources, you're well-equipped to expand your knowledge and take your GitHub Pages website to the next level!
 
 
 <details closed>
@@ -150,6 +149,8 @@ Remember, if your repository is set to private visibility, you may need to authe
 
 With these additional insights and resources, you're well-equipped to navigate the world of Git, GitHub, and web hosting platforms like Vercel. Happy coding!
 </details>
+
+
 ### Additional Resources for Your Learning Journey
 
 <details closed>
@@ -190,7 +191,7 @@ Explore some essential tools and platforms that can enhance your development exp
 With these resources at your disposal, you're well on your way to becoming a proficient developer and exploring exciting projects in the world of open source and beyond!
 </details>
 
-Feel free to explore these resources at your own pace and dive deeper into areas that interest you the most. Happy learning!
+
 ### Essential Terms Explained
 
 <details closed>
@@ -301,4 +302,3 @@ Feel free to explore these resources at your own pace and dive deeper into areas
 With these terms explained, you'll have a better understanding of the fundamental concepts and tools used in programming and web development.
 </details>
 
-Feel free to refer back to this glossary whenever you encounter unfamiliar terms during your coding journey!
