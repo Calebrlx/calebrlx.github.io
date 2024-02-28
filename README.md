@@ -25,6 +25,8 @@ Ready to embark on your website-building journey? Simply follow the breadcrumbs!
 Curious to learn more about GitHub Pages and what it can do for you? Check out the links provided in this document for additional resources and insights. The world of website creation awaits, and you're just a click away from joining the fun!
 
 
+---
+
 ### Let's Build Your First Website!
 
 #### Method 1: GitHub Web Interface
@@ -109,11 +111,6 @@ Frameworks can be your best friend when it comes to building and maintaining lar
 - **HTML and CSS Tutorials**: Brush up on your HTML and CSS skills with online tutorials and resources such as [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) and [W3Schools](https://www.w3schools.com).
 - **Understanding Licenses**: Learn more about software licenses and their implications through resources like [Choose a License](https://choosealicense.com/) and [Open Source Initiative](https://opensource.org/).
 - **Exploring Frameworks**: Explore different web development frameworks by checking out their official documentation, tutorials, and GitHub repositories. Experiment with building small projects to get hands-on experience.
-</details>
-
-
-<details closed>
-<summary>Discover More</summary>
 
 #### Try Vercel for Hosting
 
@@ -151,7 +148,9 @@ With these additional insights and resources, you're well-equipped to navigate t
 </details>
 
 
-### Additional Resources for Your Learning Journey
+---
+
+### Additional Resources
 
 <details closed>
 <summary>Explore Further</summary>
@@ -191,6 +190,8 @@ Explore some essential tools and platforms that can enhance your development exp
 With these resources at your disposal, you're well on your way to becoming a proficient developer and exploring exciting projects in the world of open source and beyond!
 </details>
 
+
+---
 
 ### Essential Terms Explained
 
