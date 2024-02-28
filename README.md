@@ -82,6 +82,38 @@ Curious to learn more about GitHub Pages and what it can do for you? Check out t
    - Your website should now display the text you added in the HTML file.
 
 
+<details open>
+<summary>Basic code</summary>
+
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is a comment and won't effect the code -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Basic Meta Tags -->
+        <title>Website</title> <!-- This will change the text on the page tab -->
+        <link rel="icon" href="/img.png" type="image/png" sizes="32x32" /> <!-- This controls the favicon, the little image you see on google next to websites and on the left of the title -->
+        <meta name="description" content="Some cool site I found."> <!-- Not that important, mostly for seo related stuff -->
+        <style> 
+        </style> <!-- Styling con be put in here using css -->
+    </head>
+    <body>
+        <div> <!-- Basic divider, usefull for more complex layouts and styling -->
+            <h1>Hey!</h1> <!-- Basic header text, equal to # in markdown -->
+            <h3>Sub-hey</h3> <!-- Basic header text, equal to ### in markdown -->
+            <p>something something</p> <!-- Basic paragraph text -->
+        </div>
+    <body>
+</html>
+```
+</details>
+
+
+
+
+
 ---
 
 ### Other Useful Tips and Tricks
