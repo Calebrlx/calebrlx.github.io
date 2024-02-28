@@ -57,13 +57,13 @@ or click "." on your keyboard while in the your repos home which should open git
 ```
 
 <details closed>
-<summary><h3>Method 1<h3></summary>
+<summary>Method 1</summary>
 once done, click the green "commit" button in the upper right hand corner. it should bring up a commit screen with a message, just click commit changes or what ever it wants you to do. once its commited, wait about a minute, create a new tab in your browser, enter "https://[your username].github.io" and go to the page. hopfully if you did every thing right you should see some text that look familiar. (if not, my emails caleb@alyeska.dev). once thats up and running, I want you to google "single page html github" or click [here](https://github.com/topics/githubio), and from there find a website you like. just click on a repo, most of the time theres a link on the right side you can click on to view a demo of the website in the repo. then you can open the files and copy/paste them into your github.io repo. some sites may be designed differently and may use css, js, or another frame work.
 </details>
 
 
 <details closed>
-<summary><h3>Method 2<h3></summary>
+<summary>Method 2</summary>
 after that, click the 3rd item down from the top, should look like 3 dots connected in a sort of branch pattern. this is source control. your gonna see the file(s) you just created under changes. theres a text box above that and the green commit and push (read it as "save") button. your gonna wanna enter something in this, doesnt matter what it is, you could actualy describe what you did to change to file (in this case, added the first file) or you can do like the professionals like me do and enter a random letter. after youve entered your description/message, click the commit button. this will upload your changes to the repo and after minute, you should be able to go to https://[your username].github.io
 </details>
 
