@@ -29,7 +29,7 @@ Well, you asked for it!
 <br>
 Simply create the repo from your github home screen, 
 click "add file", name it "index.html" and add this
-<details>
+</details>
 
 
 <h3>Method 2</h3>
