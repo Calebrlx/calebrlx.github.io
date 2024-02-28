@@ -345,46 +345,31 @@ With these terms explained, you'll have a better understanding of the fundamenta
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>This or That</title>
-<style>
-    .content {
-        display: none;
-    }
+<select onchange="showContent(this.value)">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
 
-    .active {
-        display: block;
-    }
-</style>
-</head>
-<body>
-<button onclick="showThis()">This</button>
-<button onclick="showThat()">That</button>
-
-<div id="thisContent" class="content active">
-    <h2>This Content</h2>
-    <p>This is the content for the "This" option.</p>
-</div>
-
-<div id="thatContent" class="content">
-    <h2>That Content</h2>
-    <p>This is the content for the "That" option.</p>
+<div id="content">
+  <p>Select an option to see the content.</p>
 </div>
 
 <script>
-    function showThis() {
-        document.getElementById("thisContent").classList.add("active");
-        document.getElementById("thatContent").classList.remove("active");
+  function showContent(option) {
+    var contentDiv = document.getElementById("content");
+    switch (option) {
+      case "option1":
+        contentDiv.innerHTML = "<h2>Option 1 Content</h2><p>This is the content for Option 1.</p>";
+        break;
+      case "option2":
+        contentDiv.innerHTML = "<h2>Option 2 Content</h2><p>This is the content for Option 2.</p>";
+        break;
+      case "option3":
+        contentDiv.innerHTML = "<h2>Option 3 Content</h2><p>This is the content for Option 3.</p>";
+        break;
+      default:
+        contentDiv.innerHTML = "<p>Select an option to see the content.</p>";
     }
-
-    function showThat() {
-        document.getElementById("thatContent").classList.add("active");
-        document.getElementById("thisContent").classList.remove("active");
-    }
+  }
 </script>
-</body>
-</html>
