@@ -16,7 +16,7 @@ Just like naming a repo README, <your username>.github.io is special
 It allows you to host a website for free with your github account.
 Simply create the repo from your github home screen, 
 click "add file", name it "index.html" and add this
-'''
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,7 +38,7 @@ click "add file", name it "index.html" and add this
         </div>
     <body>
 </html>
-'''
+```
 once done, click the green "commit" button in the upper right hand corner. it should bring up a commit screen with a message, just click commit changes or what ever it wants you to do. once its commited, wait about a minute, create a new tab in your browser, enter "https://<your username>.github.io" and go to the page. hopfully if you did every thing right you should see some text that look familiar. (if not, my emails caleb@alyeska.dev). once thats up and running, I want you to google "single page html github" or click [here](https://github.com/topics/githubio), and from there find a website you like. just click on a repo, most of the time theres a link on the right side you can click on to view a demo of the website in the repo. then you can open the files and copy/paste them into your github.io repo. some sites may be designed differently and may use css, js, or another frame work.
 anything you put in the public folder will be accesable through "yoursite.com/.." so if you put an image "img.png" in the public folder (public/img.png) you would be able to find it on your website at "domain.com/img.png"
 routing: any .html file you create in this file will be a path, index is a special file that is used as the home dir of you page "domain.com/". if i were to create a file about.html and publish the site, i would be able to view it by going to "domain.com/about"
