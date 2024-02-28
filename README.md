@@ -17,15 +17,17 @@ Just like naming a repo README, [your username].github.io is special
 It allows you to host a website for free with your github account.
 
 
-<details open>
+
 <summary>Method 1</summary>
+<details open>
 <br>
 Simply create the repo from your github home screen, 
 click "add file", name it "index.html" and add this
 <details>
 
-<details open>
+
 <summary>Method 2</summary>
+<details open>
 or click "." on your keyboard while in the your repos home which should open github.dev, an online ide. on the far left hand side youll see a vertical list of items, click on the gear icon at the bottom, hover over Themes and click the first item in the list (Colors Themes) and select something with dark in the name. now that thats out of the way, click the top item that looks like files, once in the Explorer menu, hover over the item that has the repoository name in all caps and [GITHUB], then select the far right icon that looks like a single file with a plus next to it. That should bring up a text input box that. just put "index.html" and hit enter. now click on that file and add this
 </details>
 
