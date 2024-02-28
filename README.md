@@ -15,8 +15,19 @@ if your reading this from the main page and you want to view the source to see h
 Its named calebrlx.github.io for a reason.
 Just like naming a repo README, [your username].github.io is special
 It allows you to host a website for free with your github account.
+
+
+<details closed>
+<summary>### Method 1 </summary>
 Simply create the repo from your github home screen, 
 click "add file", name it "index.html" and add this
+<details>
+
+<details closed>
+<summary>### Method 2</summary>
+or click "." on your keyboard while in the your repos home which should open github.dev, an online ide. on the far left hand side youll see a vertical list of items, click on the gear icon at the bottom, hover over Themes and click the first item in the list (Colors Themes) and select something with dark in the name. now that thats out of the way, click the top item that looks like files, once in the Explorer menu, hover over the item that has the repoository name in all caps and [GITHUB], then select the far right icon that looks like a single file with a plus next to it. That should bring up a text input box that. just put "index.html" and hit enter. now click on that file and add this
+</details>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -40,7 +51,22 @@ click "add file", name it "index.html" and add this
     <body>
 </html>
 ```
+
+<details closed>
+<summary><h3>Method 1<h3></summary>
 once done, click the green "commit" button in the upper right hand corner. it should bring up a commit screen with a message, just click commit changes or what ever it wants you to do. once its commited, wait about a minute, create a new tab in your browser, enter "https://[your username].github.io" and go to the page. hopfully if you did every thing right you should see some text that look familiar. (if not, my emails caleb@alyeska.dev). once thats up and running, I want you to google "single page html github" or click [here](https://github.com/topics/githubio), and from there find a website you like. just click on a repo, most of the time theres a link on the right side you can click on to view a demo of the website in the repo. then you can open the files and copy/paste them into your github.io repo. some sites may be designed differently and may use css, js, or another frame work.
+</details>
+
+
+<details closed>
+<summary><h3>Method 2<h3></summary>
+after that, click the 3rd item down from the top, should look like 3 dots connected in a sort of branch pattern. this is source control. your gonna see the file(s) you just created under changes. theres a text box above that and the green commit and push (read it as "save") button. your gonna wanna enter something in this, doesnt matter what it is, you could actualy describe what you did to change to file (in this case, added the first file) or you can do like the professionals like me do and enter a random letter. after youve entered your description/message, click the commit button. this will upload your changes to the repo and after minute, you should be able to go to https://[your username].github.io
+<details>
+
+
+
+## Other stuff
+
 anything you put in the public folder will be accesable through "yoursite.com/.." so if you put an image "img.png" in the public folder (public/img.png) you would be able to find it on your website at "domain.com/img.png"
 routing: any .html file you create in this file will be a path, index is a special file that is used as the home dir of you page "domain.com/". if i were to create a file about.html and publish the site, i would be able to view it by going to "domain.com/about"
 (sidenote: most repos have a licence somewhere on the page, common ones are MIT and Apache. they essentialy say "you can use and modify this code but dont sue us if something bad happens" if its on git. there are some specifics for each license but i know MIT means its free use, you can clone it, add your own content, and say you wrote the whole thing if you wanted to without any mention). 
@@ -137,38 +163,6 @@ idk abt opensource but amazing websites:
 ### other 
 - syntax
 - bug
-
-
-or click "." on your keyboard while in the your repos home which should open github.dev, an online ide. on the far left hand side youll see a vertical list of items, click on the gear icon at the bottom, hover over Themes and click the first item in the list (Colors Themes) and select something with dark in the name. now that thats out of the way, click the top item that looks like files, once in the Explorer menu, hover over the item that has the repoository name in all caps and [GITHUB], then select the far right icon that looks like a single file with a plus next to it. That should bring up a text input box that. just put "index.html" and hit enter. now click on that file and add this
-
-```
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- This is a comment and won't effect the code -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Basic Meta Tags -->
-        <title>Website</title> <!-- This will change the text on the page tab -->
-        <link rel="icon" href="/img.png" type="image/png" sizes="32x32" /> <!-- This controls the favicon, the little image you see on google next to websites and on the left of the title -->
-        <meta name="description" content="Some cool site I found."> <!-- Not that important, mostly for seo related stuff -->
-        <style> 
-        </style> <!-- Styling con be put in here using css -->
-    </head>
-    <body>
-        <div> <!-- Basic divider, usefull for more complex layouts and styling -->
-            <h1>Hey!</h1> <!-- Basic header text, equal to # in markdown -->
-            <h3>Sub-hey</h3> <!-- Basic header text, equal to ### in markdown -->
-            <p>something something</p> <!-- Basic paragraph text -->
-        </div>
-    <body>
-</html>
-```
-
-after that, click the 3rd item down from the top, should look like 3 dots connected in a sort of branch pattern. this is source control. your gonna see the file(s) you just created under changes. theres a text box above that and the green commit and push (read it as "save") button. your gonna wanna enter something in this, doesnt matter what it is, you could actualy describe what you did to change to file (in this case, added the first file) or you can do like the professionals like me do and enter a random letter. after youve entered your description/message, click the commit button. this will upload your changes to the repo and after minute, you should be able to go to https://[your username].github.io
-
-
-
 
 
 ------
