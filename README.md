@@ -82,6 +82,8 @@ Curious to learn more about GitHub Pages and what it can do for you? Check out t
    - Your website should now display the text you added in the HTML file.
 
 
+---
+
 <details open>
 <summary>Basic code</summary>
 
