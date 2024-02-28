@@ -17,6 +17,12 @@ Just like naming a repo README, [your username].github.io is special
 It allows you to host a website for free with your github account.
 
 
+<details open>
+<summary>Want to ruin the surprise?</summary>
+<br>
+Well, you asked for it!
+</details>
+
 
 <h3>Method 1</h3>
 <details closed>
@@ -177,8 +183,3 @@ idk abt opensource but amazing websites:
 
 ------
 
-<details open>
-<summary>Want to ruin the surprise?</summary>
-<br>
-Well, you asked for it!
-</details>
