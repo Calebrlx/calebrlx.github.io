@@ -17,12 +17,6 @@ Just like naming a repo README, [your username].github.io is special
 It allows you to host a website for free with your github account.
 
 
-<details open>
-<summary>Want to ruin the surprise?</summary>
-<br>
-Well, you asked for it!
-</details>
-
 
 <h3>Method 1</h3>
 <details closed>
@@ -37,7 +31,7 @@ click "add file", name it "index.html" and add this
 or click "." on your keyboard while in the your repos home which should open github.dev, an online ide. on the far left hand side youll see a vertical list of items, click on the gear icon at the bottom, hover over Themes and click the first item in the list (Colors Themes) and select something with dark in the name. now that thats out of the way, click the top item that looks like files, once in the Explorer menu, hover over the item that has the repoository name in all caps and [GITHUB], then select the far right icon that looks like a single file with a plus next to it. That should bring up a text input box that. just put "index.html" and hit enter. now click on that file and add this
 </details>
 
-<h3>Code: <h3>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -71,7 +65,7 @@ once done, click the green "commit" button in the upper right hand corner. it sh
 <details closed>
 <summary><h3>Method 2<h3></summary>
 after that, click the 3rd item down from the top, should look like 3 dots connected in a sort of branch pattern. this is source control. your gonna see the file(s) you just created under changes. theres a text box above that and the green commit and push (read it as "save") button. your gonna wanna enter something in this, doesnt matter what it is, you could actualy describe what you did to change to file (in this case, added the first file) or you can do like the professionals like me do and enter a random letter. after youve entered your description/message, click the commit button. this will upload your changes to the repo and after minute, you should be able to go to https://[your username].github.io
-<details>
+</details>
 
 
 
