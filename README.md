@@ -76,9 +76,14 @@ idk abt opensource but amazing websites:
 - pull
 - merge
 - main
-- 
+- version control
 - commit
 - repo
+- source code
+- fork
+- issues
+- contribute
+- push
 
 ### networking 
 - http
@@ -90,6 +95,12 @@ idk abt opensource but amazing websites:
 - ip
 - dns
 - records
+- domain
+- url
+- uri
+- cookies
+- inspect
+- webconsole
 
 ### cli
 - cli
@@ -100,7 +111,6 @@ idk abt opensource but amazing websites:
     - vim
     - rm -rf 
     - ~/
-    - 
 - npm
 - pnpm
 - yarn
@@ -113,7 +123,6 @@ idk abt opensource but amazing websites:
 - json .json
 - python .py
 - swift .swift
-- 
 
 ### files
 - README.md
@@ -148,6 +157,7 @@ or click "." on your keyboard while in the your repos home which should open git
         </div>
     <body>
 </html>
+after that, click the 3rd item down from the top, should look like 3 dots connected in a sort of branch pattern. this is source control. your gonna see the file(s) you just created under changes. theres a text box above that and the green commit and push (read it as "save") button. your gonna wanna enter something in this, doesnt matter what it is, you could actualy describe what you did to change to file (in this case, added the first file) or you can do like the professionals like me do and enter a random letter. after youve entered your description/message, click the commit button. this will upload your changes to the repo and after minute, you should be able to go to https://<your username>.github.io
 '''
 
 
