@@ -184,7 +184,6 @@ Remember, if your repository is set to private visibility, you may need to authe
 - **GitHub Learning Lab**: Take interactive courses on Git and GitHub offered by GitHub's [Learning Lab](https://lab.github.com/).
 - **Git Cheat Sheet**: Keep a handy [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) nearby for quick reference while learning Git commands.
 
-With these additional insights and resources, you're well-equipped to navigate the world of Git, GitHub, and web hosting platforms like Vercel. Happy coding!
 </details>
 
 
@@ -227,7 +226,6 @@ Explore some essential tools and platforms that can enhance your development exp
 - **[FreeCodeCamp](https://www.freecodecamp.org/)**: Access free coding tutorials and projects to build your skills and enhance your portfolio.
 - **[Codecademy](https://www.codecademy.com/)**: Learn to code interactively with step-by-step tutorials covering various programming languages and technologies.
 
-With these resources at your disposal, you're well on your way to becoming a proficient developer and exploring exciting projects in the world of open source and beyond!
 </details>
 
 
@@ -340,6 +338,17 @@ With these resources at your disposal, you're well on your way to becoming a pro
 
 - **Bug**: An error or flaw in a computer program that produces unexpected results or behavior.
 
-With these terms explained, you'll have a better understanding of the fundamental concepts and tools used in programming and web development.
 </details>
 
+
+---
+
+Content ideas:
+- OG/Twitter
+- API
+- robots.txt
+- sitemap.xml
+- Web alylitics
+- Firebase
+- npm
+- 
