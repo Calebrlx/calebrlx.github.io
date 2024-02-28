@@ -96,22 +96,44 @@ Curious to learn more about GitHub Pages and what it can do for you? Check out t
         <title>Website</title> <!-- This will change the text on the page tab -->
         <link rel="icon" href="/img.png" type="image/png" sizes="32x32" /> <!-- This controls the favicon, the little image you see on google next to websites and on the left of the title -->
         <meta name="description" content="Some cool site I found."> <!-- Not that important, mostly for seo related stuff -->
-        <style> 
+        <style>
+            /* Basic styling for the webpage */
+            body {
+                font-family: Arial, sans-serif; /* Set font family */
+                margin: 0; /* Remove default margin */
+                padding: 0; /* Remove default padding */
+                text-align: center; /* Center-align text */
+                background-color: #f8f8f8; /* Set background color */
+                color: #333; /* Set text color */
+                line-height: 1.6; /* Set line height for better readability */
+            }
+
+            /* Styling for main content area */
+            main {
+                padding: 20px; /* Add padding */
+            }
+
+            /* Styling for headings */
+            h1, h2, h3 {
+                color: #007bff; /* Set heading color */
+            }
+
+            /* Styling for paragraphs */
+            p {
+                margin-bottom: 20px; /* Add bottom margin for spacing */
+            }
         </style> <!-- Styling con be put in here using css -->
     </head>
     <body>
-        <div> <!-- Basic divider, usefull for more complex layouts and styling -->
+        <main> <!-- Basic divider, usefull for more complex layouts and styling -->
             <h1>Hey!</h1> <!-- Basic header text, equal to # in markdown -->
             <h3>Sub-hey</h3> <!-- Basic header text, equal to ### in markdown -->
             <p>something something</p> <!-- Basic paragraph text -->
-        </div>
+        </main>
     <body>
 </html>
 ```
 </details>
-
-
-
 
 
 ---
