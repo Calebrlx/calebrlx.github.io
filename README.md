@@ -4,10 +4,12 @@ Similarly, you can create a repo named README in github and create a custom bio 
 Heres mine: https://github.com/calebrlx/README
 README documents can be formated using markdown (.md) or in plain text (.txt)
 The basics of markdown
+
 ```
 # - Used to depict a header
 ## - Used to depict a header, but smaller
 ```
+
 Then the rest is pretty much plain text or you can go into more detail (here)[https://github.com]
 if your reading this from the main page and you want to view the source to see how i did any styling, click on the README.md file in the "code" section at the top of the page or click "." and navigate to README.md
 
@@ -108,6 +110,8 @@ idk abt opensource but amazing websites:
 
 ## terms 
 
+<details closed>
+<summary></summary>
 ### git
 - git 
 - pull
@@ -174,6 +178,6 @@ idk abt opensource but amazing websites:
 - syntax
 - bug
 
-
+</details>
 ------
 
