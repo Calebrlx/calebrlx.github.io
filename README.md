@@ -72,7 +72,8 @@ after that, click the 3rd item down from the top, should look like 3 dots connec
 
 
 ## Other stuff
-
+<details closed>
+<summary><summary>
 anything you put in the public folder will be accesable through "yoursite.com/.." so if you put an image "img.png" in the public folder (public/img.png) you would be able to find it on your website at "domain.com/img.png"
 
 routing: any .html file you create in this file will be a path, index is a special file that is used as the home dir of you page "domain.com/". if i were to create a file about.html and publish the site, i would be able to view it by going to "domain.com/about"
@@ -86,9 +87,12 @@ another resource for running your own website is [Vercel](https://vercel.com). t
 alot of the features on github are more tailored for proffetionals. "commit" is essentialy saving with extra steps. its from something called "git" which is version control software. super useful for when you are managing a massive code base for something like facebook but not really that nessesary for smaller personal projects. 
 
 git is pre installed on almost every computer, you can use it by running "git [commands]" from your terminal app (on mac you can press space and command then type terminal and select terminal. on windows, id say install linux or buy a mac. on linux, actualy if your using linux im going to assume you know what your doing or are already in the command line interface). if you want to download a github repo, copy the url, it has to be "https://github.com/[username]/[reponame]"(not .dev and nothing after the repo name), and run "git clone [githuburl]". you can do this with your own repos but keep in mind if the visibility of your repo is set to private, you wont easily be able to clone the project on your local machine.
+</details>
 
 
-
+## Resources
+<details closed>
+<summary>See more</summary>
 my personal faverite OSS include:
 - [next.js](https://github.com/../) (framework)
 - [chadnext](https://github.com/../chadnext) (basic SaaS that uses next.js)
@@ -106,12 +110,12 @@ idk abt opensource but amazing websites:
 - next.js  - docs for nextjs if you want to learn the frame work (https://nextjs.org/docs)
 - sololearn  - good for learning the basics of a programming language, i think its on the app store
 - pythonista  - ios app, its a few dollars on the app store but its a super useful for quickly writing and running basic python scripts without worring about set up 
+</details>
 
 
 ## terms 
-
 <details closed>
-<summary></summary>
+<summary>See more</summary>
 ### git
 - git 
 - pull
@@ -179,5 +183,3 @@ idk abt opensource but amazing websites:
 - bug
 
 </details>
-------
-
