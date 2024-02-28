@@ -18,13 +18,14 @@ It allows you to host a website for free with your github account.
 
 
 <details closed>
-<summary>### Method 1 </summary>
+<summary>Method 1</summary>
+<br>
 Simply create the repo from your github home screen, 
 click "add file", name it "index.html" and add this
 <details>
 
 <details closed>
-<summary>### Method 2</summary>
+<summary>Method 2</summary>
 or click "." on your keyboard while in the your repos home which should open github.dev, an online ide. on the far left hand side youll see a vertical list of items, click on the gear icon at the bottom, hover over Themes and click the first item in the list (Colors Themes) and select something with dark in the name. now that thats out of the way, click the top item that looks like files, once in the Explorer menu, hover over the item that has the repoository name in all caps and [GITHUB], then select the far right icon that looks like a single file with a plus next to it. That should bring up a text input box that. just put "index.html" and hit enter. now click on that file and add this
 </details>
 
@@ -68,11 +69,17 @@ after that, click the 3rd item down from the top, should look like 3 dots connec
 ## Other stuff
 
 anything you put in the public folder will be accesable through "yoursite.com/.." so if you put an image "img.png" in the public folder (public/img.png) you would be able to find it on your website at "domain.com/img.png"
+
 routing: any .html file you create in this file will be a path, index is a special file that is used as the home dir of you page "domain.com/". if i were to create a file about.html and publish the site, i would be able to view it by going to "domain.com/about"
+
 (sidenote: most repos have a licence somewhere on the page, common ones are MIT and Apache. they essentialy say "you can use and modify this code but dont sue us if something bad happens" if its on git. there are some specifics for each license but i know MIT means its free use, you can clone it, add your own content, and say you wrote the whole thing if you wanted to without any mention). 
+
 frameworks add a level of complexity but they make it easier to maintain and write bigger webpages. i highly recomend doing a general search to find some opensource projects and examine the source code. open source software.
+
 another resource for running your own website is [Vercel](https://vercel.com). they offer generous free tier and have alot of OSS websites. it allows for more control over github.io. you can sign up for vercel using your github account and easily run repositories straight from vercel. so you could open the web ide on github for a project, deploy it on vercel, and anytime you commit, youll see the webpage on vercel automaticly redeploys. there should be a url (etc../vercel.app or something like that) on your project you can click to see your page live. anyone with this link can view your page. you could use a link shortener like https://v.gd.com (free, no sign in, easy to use) to shorten the url if you wanted to.
+
 alot of the features on github are more tailored for proffetionals. "commit" is essentialy saving with extra steps. its from something called "git" which is version control software. super useful for when you are managing a massive code base for something like facebook but not really that nessesary for smaller personal projects. 
+
 git is pre installed on almost every computer, you can use it by running "git [commands]" from your terminal app (on mac you can press space and command then type terminal and select terminal. on windows, id say install linux or buy a mac. on linux, actualy if your using linux im going to assume you know what your doing or are already in the command line interface). if you want to download a github repo, copy the url, it has to be "https://github.com/[username]/[reponame]"(not .dev and nothing after the repo name), and run "git clone [githuburl]". you can do this with your own repos but keep in mind if the visibility of your repo is set to private, you wont easily be able to clone the project on your local machine.
 
 
