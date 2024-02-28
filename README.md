@@ -164,7 +164,7 @@ While GitHub offers a plethora of features tailored for professionals, it's esse
 
 If you're new to Git, fear not! It's pre-installed on most computers, and you can start using it right away. Here's how:
 - **Mac**: Open Terminal (you can find it by pressing Space + Command and typing "Terminal") and start typing Git commands.
-- **Windows**: Consider installing a Unix-like environment such as Git Bash or Windows Subsystem for Linux (WSL) for a smoother Git experience.
+- **Windows**: Consider installing a Unix-like environment such as Git Bash or Windows Subsystem for Linux (WSL) for a smoother Git experience. (The gist of this was "windows is trash" but the ai made it more "friendly", if your using windows, look up how to use it. I dont use windows.)
 - **Linux**: If you're using Linux, you're likely already familiar with the command line interface and can start using Git right away.
 
 #### Cloning Repositories
