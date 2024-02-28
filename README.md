@@ -343,3 +343,48 @@ With these resources at your disposal, you're well on your way to becoming a pro
 With these terms explained, you'll have a better understanding of the fundamental concepts and tools used in programming and web development.
 </details>
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This or That</title>
+<style>
+    .content {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<button onclick="showThis()">This</button>
+<button onclick="showThat()">That</button>
+
+<div id="thisContent" class="content active">
+    <h2>This Content</h2>
+    <p>This is the content for the "This" option.</p>
+</div>
+
+<div id="thatContent" class="content">
+    <h2>That Content</h2>
+    <p>This is the content for the "That" option.</p>
+</div>
+
+<script>
+    function showThis() {
+        document.getElementById("thisContent").classList.add("active");
+        document.getElementById("thatContent").classList.remove("active");
+    }
+
+    function showThat() {
+        document.getElementById("thatContent").classList.add("active");
+        document.getElementById("thisContent").classList.remove("active");
+    }
+</script>
+</body>
+</html>
