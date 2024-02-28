@@ -343,33 +343,3 @@ With these resources at your disposal, you're well on your way to becoming a pro
 With these terms explained, you'll have a better understanding of the fundamental concepts and tools used in programming and web development.
 </details>
 
-
-
-<select onchange="showContent(this.value)">
-  <option value="option1">Option 1</option>
-  <option value="option2">Option 2</option>
-  <option value="option3">Option 3</option>
-</select>
-
-<div id="content">
-  <p>Select an option to see the content.</p>
-</div>
-
-<script>
-  function showContent(option) {
-    var contentDiv = document.getElementById("content");
-    switch (option) {
-      case "option1":
-        contentDiv.innerHTML = "<h2>Option 1 Content</h2><p>This is the content for Option 1.</p>";
-        break;
-      case "option2":
-        contentDiv.innerHTML = "<h2>Option 2 Content</h2><p>This is the content for Option 2.</p>";
-        break;
-      case "option3":
-        contentDiv.innerHTML = "<h2>Option 3 Content</h2><p>This is the content for Option 3.</p>";
-        break;
-      default:
-        contentDiv.innerHTML = "<p>Select an option to see the content.</p>";
-    }
-  }
-</script>
