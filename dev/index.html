@@ -99,6 +99,41 @@
             color: #4CAF50;
         }
 
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #333;
+        }
+
         @media (max-width: 600px) {
             .full-text {
                 display: none;
@@ -152,7 +187,14 @@
 <body>
     <header>
         <h1>RelixAI</h1>
-        <button>Settings</button>
+        <div class="dropdown">
+            <button class="dropbtn">Settings</button>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Preferences</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
     </header>
 
     <section>
@@ -173,7 +215,7 @@
     </section>
 
     <footer class="terms">
-        <a href="#">Terms and Conditions</a>
+        <a href="/dev/terms-and-conditions">Terms and Conditions</a>
     </footer>
 </body>
 
