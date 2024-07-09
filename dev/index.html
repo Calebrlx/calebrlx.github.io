@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelixAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+
+        header button {
+            position: absolute;
+            right: 20px;
+        }
+
+        footer {
+            font-family: 'Source Code Pro', monospace;
+            text-align: center;
+            /* font-size: 0.8em; */
+            color: gray;
+            text-decoration: none;
+            margin-top: auto;
+            padding-bottom: 1rem;
+        }
+
+        section {
+            max-width: 400px;
+            margin: 2rem auto;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        a {
+            color: gray;
+            font-size: 1em;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        input[type="email"],
+        button {
+            padding: 10px 10px;
+            font-size: 1em;
+            font-family: 'Source Code Pro', monospace;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        section button {
+            display: block;
+            /* width: 80%; */
+            margin: 2rem auto;
+        }
+
+        .accent {
+            color: #4CAF50;
+        }
+
+        @media (max-width: 600px) {
+            .full-text {
+                display: none;
+            }
+
+            .short-text {
+                display: block;
+            }
+
+            section {
+                margin-top: 4rem;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                position: static;
+            }
+
+            p {
+                font-size: 1em;
+                max-width: 90%;
+                padding: 0 0 0 5%;
+            }
+
+            header {
+                padding: 20px 3rem;
+            }
+
+            header h1 {
+                width: fit-content;
+            }
+
+            header button {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .full-text {
+                display: block;
+            }
+
+            .short-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>RelixAI</h1>
+        <button>Settings</button>
+    </header>
+
+    <section>
+        <p class="full-text">RelixAI is an experimental <span class="accent">conversational AI</span>. Take everything
+            it says with a grain of salt. Conversations are limited to 5 min. RelixAI thinks and speaks at the same
+            time. It can listen and talk at all time, enabling maximum flow between you and <span
+                class="accent">RelixAI</span>. Ask it to do some Pirate role play, how to make Lasagna, or what movie it
+            watched last. We strive to support all browsers; Chrome works best. Baked with &lt;3 by YourCompany.</p>
+        <p class="short-text">Explore <span class="accent">RelixAI</span>, an experimental AI. Engage in brief, dynamic
+            conversations. Try it now!</p>
+    </section>
+
+    <section>
+        <input type="email" placeholder="Enter your email">
+        <button>Join queue</button>
+    </section>
+
+    <footer class="terms">
+        <a href="#">Terms and Conditions</a>
+    </footer>
+    <script>
+        
+    </script>
+</body>
+
+</html>
